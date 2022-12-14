@@ -1,3 +1,96 @@
-.fa-html5 {
-  color: blue;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Montserrat+Alternates:wght@900&display=swap");
+/* :root {
+  
+} */
+* {
+  box-sizing: border-box;
+  color: whitesmoke;
+}
+html {
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: rgba(45, 56, 88, 255);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(64, 77, 117, 255);
+  border-radius: 8px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(59, 14, 104);
+  background: radial-gradient(
+    circle,
+    rgba(59, 14, 104, 1) 0%,
+    rgba(26, 8, 78, 1) 100%
+  );
+}
+button {
+  outline: none;
+  border: none;
+}
+.navigationBar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(45, 56, 88, 255);
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav-left-logo {
+  display: flex;
+  margin-right: 500px;
+}
+.nav-icon {
+  margin-right: 20px;
+  font-size: 24px;
+  line-height: 24px;
+}
+.navbar-menus {
+  display: flex;
+}
+.navbar-menus > button {
+  padding: 0.5rem 1rem;
+  color: whitesmoke;
+  background-color: rgba(45, 56, 88, 255);
+}
+.home {
+  width: 100%;
+  background-color: rgba(36, 41, 78, 255);
+  padding-top: 72px;
+}
+.home-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7rem 1rem;
+}
+.myface {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.home-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+}
+.home-sub-title {
+  font-family: "Roboto", sans-serif;
+}
+.home-button {
+  margin-top: 30px;
+  border-radius: 9999px;
+  padding: 9px 1.25rem;
+  background-color: rgb(40, 165, 82);
+}
+.home-button:hover {
+  background-color: rgb(43, 178, 88);
 }
