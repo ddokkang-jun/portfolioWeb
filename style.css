@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Montserrat+Alternates:wght@900&display=swap");
-/* :root {
-  
-} */
+:root {
+  /* Color */
+  --color-blue: #73aace;
+  --color-pink: #fe918d;
+  --color-dark-pink: #ff6863;
+}
 * {
   box-sizing: border-box;
   color: whitesmoke;
@@ -10,7 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.5rem;
 }
 ::-webkit-scrollbar-track {
   background: rgba(45, 56, 88, 255);
@@ -75,7 +78,8 @@ button {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 10px solid white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .home-title {
   font-family: "Montserrat Alternates", sans-serif;
@@ -90,7 +94,36 @@ button {
   border-radius: 9999px;
   padding: 9px 1.25rem;
   background-color: rgb(40, 165, 82);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .home-button:hover {
   background-color: rgb(43, 178, 88);
 }
+
+/* Skill */
+.skills {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 5rem 10rem;
+}
+.skill-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(40, 165, 82);
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.skill-card {
+  padding: 1rem;
+  text-align: center;
+}
+.skill-icon-size {
+  color: #fff;
+  font-size: 6rem;
+}
+/* #f75421
+ */
