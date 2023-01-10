@@ -4,6 +4,7 @@
   --color-blue: #73aace;
   --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
+  --color-surface-500: 73 90 143;
 }
 * {
   box-sizing: border-box;
@@ -65,7 +66,7 @@ button {
 }
 .home {
   width: 100%;
-  background-color: rgba(36, 41, 78, 255);
+  /* background-color: rgba(36, 41, 78, 255); */
   padding-top: 72px;
 }
 .home-area {
@@ -112,18 +113,33 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(40, 165, 82);
+  background-color: rgb(var(--color-surface-500) / .1);
+  /* border: 2px solid #e5e7eb; */
   margin: 20px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 .skill-card {
   padding: 1rem;
   text-align: center;
+  background-color: #000;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
 }
 .skill-icon-size {
   color: #fff;
   font-size: 6rem;
 }
-/* #f75421
- */
+.html-area {
+  background: orange;
+}
+.css-area {
+  background-color: rgb(14 165 233);
+}
+.js-area {
+  background-color: rgb(15, 186, 129);
+}
+.react-area {
+  background-color: rgb(79, 70, 229);
+}
