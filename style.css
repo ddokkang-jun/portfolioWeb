@@ -10,6 +10,9 @@
   box-sizing: border-box;
   color: whitesmoke;
 }
+a {
+  text-decoration: none !important;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -142,4 +145,51 @@ button {
 }
 .react-area {
   background-color: rgb(79, 70, 229);
+}
+
+
+/* my work  */
+.works {
+  background-color: rgb(var(--color-surface-500) / .1);
+  border-radius: 10px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding: 20px;
+}
+.works-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.work-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  border-radius: 0.375rem;
+}
+.work-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.git-icon-area {
+  text-align: center;
+  margin-top: 20px;
+}
+.git-icon-area a {
+  color: #fff;
+}
+.fa-github-square {
+  margin-left: 20px;
+}
+
+
+/* contact */
+.contact {
+  margin-top: 100px;
+  text-align: center;
+  background-color: rgb(var(--color-surface-500) / .1);
+  border-radius: 10px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  padding: 20px;
 }
