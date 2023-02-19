@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Montserrat+Alternates:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
 :root {
   /* Color */
   --color-blue: #73aace;
@@ -6,40 +7,48 @@
   --color-dark-pink: #ff6863;
   --color-surface-500: 73 90 143;
 }
+
 * {
   box-sizing: border-box;
   color: whitesmoke;
+  font-family: 'Noto Sans KR', sans-serif;
 }
+
 a {
   text-decoration: none !important;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 html::-webkit-scrollbar {
   width: 0.5rem;
 }
+
 ::-webkit-scrollbar-track {
   background: rgba(45, 56, 88, 255);
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: rgba(64, 77, 117, 255);
   border-radius: 8px;
 }
+
 body {
   margin: 0;
   padding: 0;
   background: rgb(59, 14, 104);
-  background: radial-gradient(
-    circle,
-    rgba(59, 14, 104, 1) 0%,
-    rgba(26, 8, 78, 1) 100%
-  );
+  background: radial-gradient(circle,
+      rgba(59, 14, 104, 1) 0%,
+      rgba(26, 8, 78, 1) 100%);
 }
+
 button {
   outline: none;
   border: none;
 }
+
 .navigationBar {
   position: fixed;
   width: 100%;
@@ -48,51 +57,56 @@ button {
   align-items: center;
   background-color: rgba(45, 56, 88, 255);
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  z-index: 100;
 }
+
 .nav-left-logo {
   display: flex;
   margin-right: 500px;
 }
+
 .nav-icon {
   margin-right: 20px;
   font-size: 24px;
   line-height: 24px;
 }
+
+.nav-title>a {
+  color: white;
+}
+
 .navbar-menus {
   display: flex;
 }
-.navbar-menus > button {
+
+.navbar-menus>button {
   padding: 0.5rem 1rem;
   color: whitesmoke;
   background-color: rgba(45, 56, 88, 255);
 }
+
 .home {
   width: 100%;
+  height: 100vh;
   /* background-color: rgba(36, 41, 78, 255); */
+  background-color: whitesmoke;
   padding-top: 72px;
 }
+
 .home-area {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 7rem 1rem;
+  padding: 1rem;
 }
-.myface {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-  border: 10px solid white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+.home-video{
+  border: 5px solid gray;
+  border-radius: 20px;
+  
 }
-.home-title {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 900;
-  font-size: 80px;
-}
-.home-sub-title {
-  font-family: "Roboto", sans-serif;
-}
+
 .home-button {
   margin-top: 30px;
   border-radius: 9999px;
@@ -100,6 +114,7 @@ button {
   background-color: rgb(40, 165, 82);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .home-button:hover {
   background-color: rgb(43, 178, 88);
 }
@@ -112,6 +127,7 @@ button {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 5rem 10rem;
 }
+
 .skill-area {
   display: flex;
   flex-direction: column;
@@ -122,6 +138,7 @@ button {
   border-radius: 10px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
+
 .skill-card {
   padding: 1rem;
   text-align: center;
@@ -130,19 +147,24 @@ button {
   height: 128px;
   border-radius: 50%;
 }
+
 .skill-icon-size {
   color: #fff;
   font-size: 6rem;
 }
+
 .html-area {
   background: orange;
 }
+
 .css-area {
   background-color: rgb(14 165 233);
 }
+
 .js-area {
   background-color: rgb(15, 186, 129);
 }
+
 .react-area {
   background-color: rgb(79, 70, 229);
 }
@@ -155,30 +177,37 @@ button {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   padding: 20px;
 }
+
 .works-title {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .work-card {
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
+
 .card img {
   border-radius: 0.375rem;
 }
+
 .work-card-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+
 .git-icon-area {
   text-align: center;
   margin-top: 20px;
 }
+
 .git-icon-area a {
   color: #fff;
 }
+
 .fa-github-square {
   margin-left: 20px;
 }
